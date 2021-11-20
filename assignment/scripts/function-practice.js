@@ -63,13 +63,24 @@ function getLast( array ) {
   }
 }
 console.log( 'The last item is ', getLast([]));
+console.log( 'The last item is ', getLast(['u', 7, '8', 'twelve', 0]));
+console.log( 'The last item is ', getLast(['u', 7, '8', 'twelve', 0, '[]']));
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-function find( value, array ){
-  
+function findValue( value, array ){
+  for (let i=0; i<array.length; i++) {
+    if (array[i] === value) {
+      return true;
+    }
+    
+  }
+      return false;
 }
+console.log('Is the value here? ', findValue(12, [ 34, 48, 97]));
+console.log('Is the value here? ', findValue(12, [ 34, 48, 97, 12]));
+console.log('Is the value here? ', findValue(12, [ 12, 34, 48, 97]));
 
 // ----------------------
 // Stretch Goals
