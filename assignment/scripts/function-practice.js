@@ -128,3 +128,13 @@ console.log('   are ', returnPositive(exampleArray));
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+
+// From edabit.com, I will try the minute to second conversion problem.
+// This can be done by multiplying any integer entered by 60.
+function minuteConvert(minutes) {  
+  let seconds = 0;
+  seconds = minutes*60;
+  return seconds;
+}
+
+console.log('The number of seconds in 50 minutes is ', minuteConvert(50));
